@@ -21,7 +21,7 @@ input[type='submit'], button, [aria-label]{
 }
 
 td{
-    background-color: aquamarine;
+    background-color: lightgray;
     padding-right: 10px;
     text-align: left;
 }
