@@ -40,17 +40,13 @@ var app = new function(){
             if(task){
                 self.tasks.splice(item, 1, task.trim());
                 self.FetchAll();
-                CloseInput();
+                CloseBox();
             }
         }
     };
 
     this.Delete = function(item){
-
-    };
-
-    this.Count = function(data){
-
+        
     };
 }
 
