@@ -46,7 +46,22 @@ var app = new function(){
     };
 
     this.Delete = function(item){
-        
+        this.tasks.splice(item,1)
+        this.FetchAll();
+    };
+
+    this.Count = function(data){
+        var el = document.getElementById('counter');
+        var name = 'Tasks';
+        if(data){
+            if(data == 1){
+                name = 'Task';
+            }
+            el.innerHTML = data+' '+name;
+        }
+        else{
+            el.innerHTML = "No "+ name;
+        }
     };
 }
 
